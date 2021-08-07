@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Bootstrep CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <title>Geometry Clipmaps by Werner Ziegelwanger</title>
+        <style>
+            body {
+                background-color: #000000;
+            }
+            .gui {
+                position: absolute;
+            }
+            .github{
+                position: absolute;
+                top: 0px;
+                right: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://github.com/Ziagl"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_red_aa0000.png?resize=149%2C149" class="github" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+        <div class="gui navbar-light">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#heightmapModal" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="heightmapModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="heightmapModalLabel">Heightmap generator</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="heightmapForm">
+                    <div class="modal-body">
+                    
+                        <fieldset>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <label for="algorithm" class="form-label">Algorithm:</label>
+                                    <select class="form-select" id="algorithm">
+                                        <!-- loaded from json -->
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <label for="seed" class="form-label">Seed:</label>
+                                    <input type="text" class="form-control" id="seed" name="seed" value="0">
+                                </div>
+                                <div class="col-auto">
+                                    <label for="size" class="form-label">Size:</label>
+                                    <input type="text" class="form-control" id="size" name="size" value="1024">
+                                </div>
+                            </div>
+                            <div class="row" id="params">
+                                <!-- params loaded dynamically -->
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Generate</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+
+        <canvas id="heightmapCanvas"></canvas>
+
+        <!-- Bootstrap JS -->
+        <script src="./js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script type="module" src="bundle.js"></script>
+    </body>
+</html>

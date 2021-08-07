@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "strict": true,
+        "rootDir": "./",
+        "rootDirs": ["./heightmap"]
+    },
+    "include": ["**/*.ts"]
+}

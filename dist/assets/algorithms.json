@@ -1,0 +1,142 @@
+[
+    {
+        "type":"fractal",
+        "name":"Triangle Division",
+        "function":"triangledivision",
+        "active":true,
+        "params":[
+            {
+                "name":"roughness",
+                "default":0.9
+            },
+            {
+                "name":"FIR value",
+                "default":0.65
+            }
+        ]
+    },
+    {
+        "type":"fractal",
+        "name":"Diamond-Square",
+        "function":"diamondsquare",
+        "active":true,
+        "params":[
+            {
+                "name":"roughness",
+                "default":0.5
+            },
+            {
+                "name":"FIR value",
+                "default":0.65
+            }
+        ]
+    },
+    {
+        "type":"fractal",
+        "name":"Midpoint Displacement",
+        "function":"midpointdisplacement",
+        "active":true,
+        "params":[
+            {
+                "name":"roughness",
+                "default":0.5
+            },
+            {
+                "name":"FIR value",
+                "default":0.65
+            }
+        ]
+    },
+    {
+        "type":"procedural",
+        "name":"Fault Formation",
+        "function":"faultformation",
+        "active":true,
+        "params":[
+            {
+                "name":"iterations",
+                "default":128
+            },
+            {
+                "name":"filter iterations",
+                "default":8
+            },
+            {
+                "name":"FIR value",
+                "default":0.4
+            }
+        ]
+    },
+    {
+        "type":"procedural",
+        "name":"Particle Deposition",
+        "function":"particledeposition",
+        "active":true,
+        "params":[
+            {
+                "name":"mountains",
+                "default":20
+            },
+            {
+                "name":"move drop position",
+                "default":10
+            },
+            {
+                "name":"particles",
+                "default":1000000
+            },
+            {
+                "name":"caldera height",
+                "default":10.0
+            },
+            {
+                "name":"FIR value",
+                "default":0.65
+            }
+        ]
+    },
+    {
+        "type":"procedural",
+        "name":"Perlin Noise",
+        "function":"perlinnoise",
+        "active":false,
+        "params":[
+            {
+                "name":"octaves",
+                "default":5
+            },
+            {
+                "name":"amplitude",
+                "default":0.5
+            },
+            {
+                "name":"frequency",
+                "default":0.02
+            },
+            {
+                "name":"persistence",
+                "default":1.0
+            },
+            {
+                "name":"FIR value",
+                "default":0.65
+            }
+        ]
+    },
+    {
+        "type":"procedural",
+        "name":"Voronoi Diagram",
+        "function":"voronoidiagram",
+        "active":true,
+        "params":[
+            {
+                "name":"points",
+                "default":100
+            },
+            {
+                "name":"FIR value",
+                "default":0.65
+            }
+        ]
+    }
+]
