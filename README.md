@@ -1,6 +1,6 @@
-# GeometryClipmapsJS
+# HeightmapGenerator
 
-My implementation of geometry clipmaps for WegGl with TypeScript and Three.js
+My re-implementation of my heightmap generator in TypeScript. See https://heightmap-generator.com
 
 ## 3rd party tools
 
