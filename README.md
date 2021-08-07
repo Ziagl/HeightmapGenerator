@@ -1,6 +1,10 @@
 # HeightmapGenerator
 
-My re-implementation of my heightmap generator in TypeScript. See https://heightmap-generator.com
+My reimplementation of my heightmap generator in TypeScript.
+https://heightmap-generator.com
+
+Command line implementation for Windows or Linux see:
+https://github.com/Ziagl/heightmap
 
 ## 3rd party tools
 
