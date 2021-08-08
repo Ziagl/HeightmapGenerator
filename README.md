@@ -6,6 +6,6 @@ https://heightmap-generator.com
 Command line implementation for Windows or Linux see:
 https://github.com/Ziagl/heightmap
 
-## 3rd party tools
+## Dependencies
 
 -   needs bootstrap css und js in dist
